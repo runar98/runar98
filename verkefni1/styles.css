@@ -1,0 +1,21 @@
+h1 {
+    color: blueviolet;
+}
+p {
+    color: lightcoral
+}
+strong {
+    color: goldenrod;
+}
+body {
+    border: 1px dotted rgb(142, 18, 173);
+    width: 50em;
+    margin: 1em auto;
+    padding: 1em;
+}
+.lennon p {
+margin: 0
+}
+.elvis {
+  
+}
