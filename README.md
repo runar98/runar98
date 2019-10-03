@@ -5,4 +5,4 @@
 	* [verkefni 21-22](verkefni2/verkefni21-22/)
 	* [verkefni 23](verkefni2/verkefni23/)
 	* [verkefni 24](verkefni2/verkefni24/)
-3. [verkefni 3]()
+3. [verkefni 3](verkefni3/verk31/)
