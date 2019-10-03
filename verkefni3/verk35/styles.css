@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 60em;
+    margin:0 auto; /* 60em = 960px */
+    background: #404040;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+/* -- GRID AREA -- */
+.haus{
+    padding: 1em 1em 1em 1em;
+    grid-area: haus;
+    text-align: center;
+    background: #434343;
+    color: #FF5252;
+}
+.main{
+    grid-area: main;
+}
+.topnav{
+    grid-area: topnav;
+}
+.foot{
+    grid-area: foot;
+}
+/* dálkar í container */
+.as1{
+    grid-area: a1;
+    padding-right:1em;
+    color: #ff7427;
+}
+.as2{
+    grid-area: a2;
+    padding-left:1em;
+    color: #ff7427;
+}
+.art1{
+    grid-area: art1;
+    color: #ff7432;
+}
+.art1 h2, .as1 h4, .as2 h4{
+    color: #FF5252;
+}
+/* grid template area */
+.body{
+    display: grid;
+    grid-gap:0;
+    grid-template-areas:
+        'topnav topnav haus'
+        'main main haus'
+        'foot foot haus'
+}
+/* innri tög */
+.main{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+        'a1 art1 art1'
+        'a1 art1 art1'
+        'a2 a2 a2';
+    grid-template-columns: 1fr 2fr 1fr;
+}
+/* flexbox*/
+.topmenu, .footmenu{
+    display: flex;
+    grid-gap: 6em;
+    justify-content: space-around;
+    margin: 0;
+    padding: 3em 3em 3em 3em;
+    background: #434343;
+}
+.topmenu li, .footmenu{
+    list-style-type: none;
+}
+a{
+    font-size: 15pt;
+    color: #444;
+    padding: 1em;
+    border: 3px solid #FF8686;
+    background: #FF7575;
+}
+a:hover{
+    background: #FF8686;
+    color: #FFFCFC
+}
